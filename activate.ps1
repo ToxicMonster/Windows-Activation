@@ -10,7 +10,7 @@ if ($GVLK) {
     $GVLK_FILE = Get-Content -Path $GVLK_FILE | ConvertFrom-Json
 }
 else {
-    $GVLK_FILE = Invoke-WebRequest "https://raw.githubusercontent.com/ToxicMonster/Windows-Activation/main/config/gvlk.json"
+    $GVLK_FILE = Invoke-WebRequest "https://raw.githubusercontent.com/ToxicMonster/Windows-Activation/main/config/gvlk.json" | ConvertFrom-Json
     Write-Host "GVLK File: Default"
 }
 
