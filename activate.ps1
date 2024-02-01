@@ -18,7 +18,7 @@ if ($KMS) {
     $KMS_SERVER = $KMS
 }
 else {
-    $KMS_SERVER = "kms8.msguides.com"
+    $KMS_SERVER = "kms.toxicmonster.net"
 }
 Write-Host "KMS Server: $KMS_SERVER"
 

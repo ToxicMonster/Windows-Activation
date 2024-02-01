@@ -28,5 +28,5 @@ The JSON File must be formatted using the Windows Product Name and key
 ### Specify KMS Server
 A custom KMS server can be specified using the `-KMS` parameter
 ```powershell
-.\activate.ps1 -KMS "kms8.msguides.com"
+.\activate.ps1 -KMS "kms.toxicmonster.net"
 ```
