@@ -5,17 +5,17 @@ The script must be run in an elevated powershell window
 ### Basic Execution
 The script can be run using the `iwr` and `iex` powershell commands
 ```powershell
-iwr https://raw.githubusercontent.com/ToxicMonster/activate-windows/main/activate.ps1 | iex
+iwr "https://raw.githubusercontent.com/ToxicMonster/Windows-Activation/main/activate.ps1" | iex
 ```
 ### Override Current Activation
 The current product key and activation status can be overwritten using the `-OVERWRITE` switch
 ```powershell
-iwr https://raw.githubusercontent.com/ToxicMonster/activate-windows/main/activate.ps1 | iex -OVERWRITE
+iwr "https://raw.githubusercontent.com/ToxicMonster/Windows-Activation/main/activate.ps1" | iex -OVERWRITE
 ```
 ### Specify GVLK Keys
 A custom JSON file can be specified to retrieve keys from using the `-GVLK` parameter
 ```powershell
-iwr https://raw.githubusercontent.com/ToxicMonster/activate-windows/main/activate.ps1 | iex -GVLK .\config\gvlk.json
+iwr "https://raw.githubusercontent.com/ToxicMonster/Windows-Activation/main/activate.ps1" | iex -GVLK .\config\gvlk.json
 ```
 #### Key Format
 The JSON File must be formatted using the Windows Product Name and key
@@ -28,5 +28,5 @@ The JSON File must be formatted using the Windows Product Name and key
 ### Specify KMS Server
 A custom KMS server can be specified using the `-KMS` parameter
 ```powershell
-iwr https://raw.githubusercontent.com/ToxicMonster/activate-windows/main/activate.ps1 | iex -KMS "kms8.msguides.com"
+iwr "https://raw.githubusercontent.com/ToxicMonster/Windows-Activation/main/activate.ps1" | iex -KMS "kms8.msguides.com"
 ```
