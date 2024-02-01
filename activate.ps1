@@ -7,12 +7,12 @@ param (
 if ($GVLK) {
     $GVLK_FILE = $GVLK
     Write-Host "GVLK File: $GVLK"
+    $GVLK_FILE = Get-Content -Path $GVLK_FILE | ConvertFrom-Json
 }
 else {
     $GVLK_FILE = Invoke-WebRequest "https://raw.githubusercontent.com/ToxicMonster/Windows-Activation/main/config/gvlk.json"
     Write-Host "GVLK File: Default"
 }
-$GVLK_FILE = Get-Content -Path $GVLK_FILE | ConvertFrom-Json
 
 if ($KMS) {
     $KMS_SERVER = $KMS
